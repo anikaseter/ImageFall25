@@ -13,7 +13,7 @@
 
     <!-- Stage -->
       <a-box position="0 -1 -8" src="./assets/blackFloor.jpeg" width="40" height="1" depth="25"></a-box>
-      <a-box position="0 9 4" width="40" height="19" depth="1"></a-box>
+      <a-box position="0 9 4" src="./assets/glitchyScreen.mp4" width="40" height="19" depth="1"></a-box>
       <a-box position="19.5 9 -20" src="./assets/metal.jpeg" metalness="1" width="1" height="19" depth="1"></a-box>
       <a-box position="-19.5 9 -20" src="./assets/metal.jpeg" metalness="1" width="1" height="19" depth="1"></a-box>
       <!-- Ceiling -->
@@ -26,12 +26,18 @@
       <a-box position="0 18 -12" src="./assets/metal.jpeg" metalness="1" width="38" height="1" depth="1"></a-box>
       <a-box position="0 18 -16" src="./assets/metal.jpeg" metalness="1" width="38" height="1" depth="1"></a-box>
       <a-box position="0 18 -20" src="./assets/metal.jpeg" metalness="1" width="38" height="1" depth="1"></a-box>
-      <!-- Spotlights -->
-      <a-collada-model src="#spotlight" position="0 0 0" scale=".1"></a-collada-model>
       <!-- Mic -->
-      <a-cylinder position="0 .5 -15" src="./assets/blackPlastic.jpeg" radius=".05" height="1.5"></a-cylinder>
+      <a-cone position="0 -0.4 -15" src="./assets/blackPlastic.jpeg" radius-top=".05" radius-bottom=".25" height=".1"></a-cone>
+      <a-cylinder position="0 .4 -15" src="./assets/blackPlastic.jpeg" radius=".05" height="1.7"></a-cylinder>
       <a-cylinder position="0 1.25 -15" src="./assets/blackPlastic.jpeg" rotation="75 0 0" radius=".05" height=".5"></a-cylinder>
       <a-sphere position="0 1.32 -14.75" src="./assets/micMaterial.jpeg" radius=".1"></a-sphere>
+
+      <!-- Lights -->
+      <a-entity light="type: point; color: #00bbff; intensity: 100" position="0 8.5 0"></a-entity>
+      <a-entity light="type: point; color: #00bbff; intensity: 100" position="-10 8.5 0"></a-entity>
+      <a-entity light="type: point; color: #00bbff; intensity: 100" position="10 8.5 0"></a-entity>
+      <a-entity light="type: spot; color: #fff; angle: 12; intensity: 150" rotation="-55 123 0" position="10 17.5 -20"></a-entity>
+      <a-entity light="type: spot; color: #fff; angle: 12; intensity: 150" rotation="-55 -123 0" position="-10 17.5 -20"></a-entity>
 
       <!-- Arena -->
 
