@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+    <script src="script.js"></script>
   </head>
   <body>
     <a-scene>
@@ -12,7 +13,7 @@
       </a-assets>
       </a-assets>
 
-      <a-sky src="./assets/nightSky.jpg"></a-sky>
+      <a-sky animation="property: rotation; to: -360 0 360; loop: true; dur: 100000" src="./assets/nightSkyEdited.jpg"></a-sky>
 
       <!-- Stage -->
       <a-box position="0 -4 -8" src="./assets/blackFloor.jpeg" width="40" height="7" depth="25"></a-box>
