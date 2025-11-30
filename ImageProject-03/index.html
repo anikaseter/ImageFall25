@@ -7,12 +7,15 @@
     <a-scene>
       <a-assets>
         <a-asset-item id="spotlight" src="./assets/spotlight/model.dae"></a-asset-item>
+        <a-asset-item id="arenaBase" src="./assets/ImageProj3ArenaBase.obj"></a-asset-item>
+        <a-asset-item id="people" src="./assets/ImageProj3People.obj"></a-asset-item>
+      </a-assets>
       </a-assets>
 
       <a-sky src="./assets/nightSky.jpg"></a-sky>
 
-    <!-- Stage -->
-      <a-box position="0 -1 -8" src="./assets/blackFloor.jpeg" width="40" height="1" depth="25"></a-box>
+      <!-- Stage -->
+      <a-box position="0 -4 -8" src="./assets/blackFloor.jpeg" width="40" height="7" depth="25"></a-box>
       <a-box position="0 9 4" src="./assets/glitchyScreen.mp4" width="40" height="19" depth="1"></a-box>
       <a-box position="19.5 9 -20" src="./assets/metal.jpeg" metalness="1" width="1" height="19" depth="1"></a-box>
       <a-box position="-19.5 9 -20" src="./assets/metal.jpeg" metalness="1" width="1" height="19" depth="1"></a-box>
@@ -40,6 +43,8 @@
       <a-entity light="type: spot; color: #fff; angle: 12; intensity: 150" rotation="-55 -123 0" position="-10 17.5 -20"></a-entity>
 
       <!-- Arena -->
+      <a-obj-model src="#arenaBase" material="shader:flat;src:./assets/arenaPlastic.jpeg;repeat:.75 .5" position="0 -4 -50" scale="6 6 6"></a-obj-model>
+      <a-obj-model src="#people" material="src:./assets/peoplePlastic.jpeg;" position="0 -4 -50" scale="6 6 6"></a-obj-model>
 
     </a-scene>
   </body>
